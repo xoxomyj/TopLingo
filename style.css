@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+header{
+background-color: green ;
+}
+.container{
+    background-color: #5B0B9B;
+    height: 200px;
+}
