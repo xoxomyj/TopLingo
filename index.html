@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <script src="./app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <script src="./temas.js" defer></script>
+    <script src="./app.js " defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./temas.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -11,42 +16,50 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" class="icon" href="./img/translate.svg">
     <title>TopLingo</title>
+
+    <link rel="icon" class="icon" href="./img/translate.svg">
 </head>
 <body>
-    <header>
-        <div class="margem"></div>
-    </header>
-    <main>
-        <h1>TopLingo</h1>
-        <img class="lua" src="./img/lua-e-estrelas.png" alt="">
-         <section>
-                <div class="pt">
-                    <textarea  id="TextoEntra" type="text" required placeholder="Olá Mundo!"></textarea>
-                    <div class="line"></div>
-                    <img class="imgpt" src="./img/image 2.png" alt="">
-                </div>
+<header>
+    <div class="margem"></div>
+    <div class="solua">
+        <label for="tema">
+            <img src="./img/lua-e-estrelas.png" alt="">
+        </label>
+        
+        <input id="tema" type="checkbox" class="toggle-dark-mode sumir"></input>
+    </div>
+
+</header>
+<main>
+    <h1>TopLingo</h1>
+
+    <section>
+        <div class="pt">
+            <textarea  id="translateTeste" required placeholder="Olá Mundo!" wrap="hard" style="resize: none;" ></textarea>
+            <div class="line"></div>
+            <img class="imgpt" src="./img/image 2.png" alt="">
+        </div>
+    
+    
+        <div class="ing">
+            <textarea  id="mostrar" type="text" required placeholder="Hello World!"  wrap="hard" style="resize: none;"></textarea>
+            <div class="line"></div>
+            <img class="imgpt" src="./img/image 3.png" alt="">
+        </div>
+    
+    </section>
+</main>
+<footer>
+
+    <button class="botao" id="traduzir"><p>TRADUZIR</p></button>
+
+    <p class="nomes"> 🌸 ANA LUIZA - GIOVANA - MARIANA  🌸 </p>
 
 
-                <div class="ing">
-                    <textarea  id="Traducao" type="text" placeholder="Hello World!"></textarea>
-                    <div class="line"></div>
-                    <img class="imging" src="./img/image 3.png" alt="">
-                </div>
-
-            </section>
-    </main>
-
-    <footer>
-
-        <button class="botao" id="Traduzir"><p>TRADUZIR</p></button>
-
-        <p class="nomes"> 🌸 ANA LUIZA - GIOVANA - MARIANA  🌸 </p>
+</footer>
 
 
-    </footer>
-
- 
 </body>
 </html>

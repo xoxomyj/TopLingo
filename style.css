@@ -116,3 +116,9 @@ footer{
     top: 20px;
     font-family: "Truculenta", sans-serif;
 }
+
+textarea{
+   height: 4vh;
+   background-color: transparent;
+   outline: none;
+}

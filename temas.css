@@ -20,6 +20,12 @@ body{
     height: 40px;
     weight: 45px;
     position: relative;      
-    left: 1230px;
 
+}
+
+.solua{
+    display: flex;
+    justify-content: end;
+    padding-right: 14px;
+    padding-top: 14px;
 }
