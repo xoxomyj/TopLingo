@@ -14,9 +14,8 @@ h1{
     color: #5B0B9B;
     font-size: 5rem;
     font-weight: 50px;
-    padding-top: 0;
     padding-top: 30px;
-    margin-left: 800px;
+    margin-left: 750px;
     font-family: "Inter", sans-serif;
     align-items: center;
     justify-content: center;
@@ -25,15 +24,16 @@ h1{
     margin-left: 1800px;
     width: 50px;
     height: 50px;
+    margin-top: -80px;
 }
 .imgpt{
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 5vh;
-    height: 5vh;
-    left: 128vh;
-    top: -1px;
+    width: 4vh;
+    height: 4vh;
+    left: 132vh;
+    top: -18px;
 }
 
 .pt{
@@ -47,13 +47,14 @@ h1{
 }
 
 
-input{
+textarea{
     display: grid;
     width: 30vw;
-    height: 5vh;
+    height: 2vh;
     border: none;
     background-color:none;
-    
+    font-family: "Truculenta", sans-serif;
+  
 }
 
 .line{
@@ -67,10 +68,10 @@ input{
 .imging{
     display: flex;
     position: absolute;
-    width: 5vh;
-    height: 5vh;
-    left: 128vh;
-    top: -1px;
+    width: 4vh;
+    height: 4vh;
+    left: 132vh;
+    top: -18px;
     
 }
 
