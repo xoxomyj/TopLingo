@@ -23,27 +23,39 @@ function setTema(newTema) {
 }
 
 const modoEscuro = document.getElementById('tema')
-modoEscuro.addEventListener('change', function({target}) {
-    setTema(target.checked ? 'escuro' : 'claro');
+function mudar() {
+    setTema(modoEscuro.checked ? 'escuro' : 'claro');
+
     if(localStorage.getItem('tema') == 'escuro'){
         modoEscuro.previousElementSibling.children[0].src = './img/sol.png'
-
-        const translateTest = document.getElementById('translateTeste')
-        translateTest.style.color = '#ffffff'
-        const traducao = document.getElementById('mostrar')
-        traducao.style.color = '#ffffff'
-    }else{
-        modoEscuro.previousElementSibling.children[0].src = './img/lua-e-estrelas.png'
 
         const translateTest = document.getElementById('translateTeste')
         translateTest.style.color = '#000000'
         const traducao = document.getElementById('mostrar')
         traducao.style.color = '#000000'
-    }
-});
+        localStorage.setItem('tema', 'escuro')
+    }else{
+        modoEscuro.previousElementSibling.children[0].src = './img/lua-e-estrelas.png'
 
+        const translateTest = document.getElementById('translateTeste')
+        translateTest.style.color = '#ffffff'
+        const traducao = document.getElementById('mostrar')
+        traducao.style.color = '#ffffff'
+        localStorage.setItem('tema', 'claro');
+    }
+}
+
+modoEscuro.addEventListener('change', mudar)
 
 const tema = localStorage.getItem('tema');
 if( tema ) {
     setTema(tema)
+}
+
+const mudarTemaAlice = function(){
+    if(translateTest.value == "alice".toLowerCase()){
+        mudar()
+    }else{
+        mostrarTraducao()
+    }
 }

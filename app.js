@@ -11,18 +11,18 @@ async function traduzir(translateTest){
     return translate
 }
 
-async function mostrarTradução(){
+async function mostrarTraducao(){
     const traducao = document.getElementById('mostrar')
     const traduz = await traduzir(translateTest.value)
 
     traducao.value = traduz.responseData.translatedText
 }
 
-button.addEventListener('click', mostrarTradução)
+button.addEventListener('click', mostrarTraducao)
 
 translateTest.addEventListener('keypress', (event) =>{
 
     if(event.code === 'Enter'){
-        mostrarTradução()
+        mudarTemaAlice()
     }
 })
